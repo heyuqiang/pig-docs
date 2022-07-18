@@ -1,7 +1,5 @@
-
-
-const ogDescription = 'Next Generation Frontend Tooling'
-const ogImage = 'https://vitejs.dev/og-image.png'
+// const ogDescription = 'Next Generation Frontend Tooling'
+// const ogImage = 'https://vitejs.dev/og-image.png'
 const ogTitle = 'PIG'
 const ogUrl = 'https://pigcloud.net'
 
@@ -14,9 +12,9 @@ export default {
         ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
         ['meta', { property: 'og:type', content: 'website' }],
         ['meta', { property: 'og:title', content: ogTitle }],
-        ['meta', { property: 'og:image', content: ogImage }],
+        // ['meta', { property: 'og:image', content: ogImage }],
         ['meta', { property: 'og:url', content: ogUrl }],
-        ['meta', { property: 'og:description', content: ogDescription }],
+        // ['meta', { property: 'og:description', content: ogDescription }],
         ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
         ['meta', { name: 'twitter:site', content: '@vite_js' }]
     ],
@@ -24,15 +22,10 @@ export default {
     themeConfig: {
         logo: '/logo.svg',
 
-        // editLink: {
-        //     text: '为此页提供修改建议',
-        //     pattern: 'https://gitee.com/pigcloudx/pig-docs/edit/master/:path',
-        // },
-
-        // editLink: {
-        //     text: '为此页提供修改建议',
-        //     pattern: 'https://github.com/vitejs/docs-cn/edit/main/docs/:path',
-        // },
+        editLink: {
+            text: '为此页提供修改建议',
+            pattern: 'https://gitee.com/pigcloudx/pig-docs/blob/develop/docs/:path',
+        },
 
         socialLinks: [
             { icon: 'twitter', link: 'https://twitter.com/vite_js' },
@@ -40,14 +33,14 @@ export default {
             { icon: 'github', link: 'https://gitee.com/pigcloudx/pig-docs' }
         ],
 
-        // algolia: {
-        //     appId: 'BH4D9OD16A',
-        //     apiKey: 'b573aa848fd57fb47d693b531297403c',
-        //     indexName: 'vitejs',
-        //     searchParameters: {
-        //         facetFilters: ['tags:cn']
-        //     }
-        // },
+        algolia: {
+            appId: 'FYI90PWOFE',
+            apiKey: 'a7774d725409858c23218095dd9f4109',
+            indexName: 'pig',
+            searchParameters: {
+                facetFilters: ['tags:cn']
+            }
+        },
 
         // carbonAds: {
         //     code: 'CEBIEK3N',
@@ -63,7 +56,7 @@ export default {
 
         footer: {
             message: '根据 MIT 许可证发布。',
-            copyright: 'Copyright © 2022 PigCloud, Inc.'
+            copyright: 'Copyright © 2022 pigcloud, Inc.'
         },
 
         nav: [
@@ -131,10 +124,6 @@ export default {
                         {
                             text: '使用插件',
                             link: '/guide/using-plugins'
-                        },
-                        {
-                            text: '依赖预构建',
-                            link: '/guide/dep-pre-bundling'
                         },
                         {
                             text: '静态资源处理',
