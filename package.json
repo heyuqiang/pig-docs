@@ -1,0 +1,18 @@
+{
+  "name": "pig-docs",
+  "version": "1.0.0",
+  "description": "PIG 项目说明文档",
+  "repository": "https://gitee.com/pigcloudx/pig-docs.git",
+  "author": "heyuqiang <785056500@qq.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.4",
+    "vue": "^3.2.37"
+  }
+}
