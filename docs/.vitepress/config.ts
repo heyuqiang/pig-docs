@@ -35,7 +35,7 @@ export default {
 
         algolia: {
             appId: 'FYI90PWOFE',
-            apiKey: 'a7774d725409858c23218095dd9f4109',
+            apiKey: 'ebd335ed684d4cb57987c718f5ccc119',
             indexName: 'pig',
             searchParameters: {
                 facetFilters: ['tags:cn']
