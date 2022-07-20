@@ -35,12 +35,21 @@ export default {
 
         algolia: {
             appId: 'FYI90PWOFE',
-            apiKey: 'ebd335ed684d4cb57987c718f5ccc119',
-            indexName: 'pig',
-            searchParameters: {
-                facetFilters: ['tags:cn']
-            }
+            apiKey: '397a81b1dfeafac1345d85e9336f05fd',
+            indexName: 'pig-index',
+            // searchParameters: {
+            //     facetFilters: ['tags:cn']
+            // }
         },
+
+        // algolia: {
+        //   appId: 'BH4D9OD16A',
+        //   apiKey: 'b573aa848fd57fb47d693b531297403c',
+        //   indexName: 'vitejs',
+        //   searchParameters: {
+        //     facetFilters: ['tags:cn']
+        //   }
+        // },
 
         // carbonAds: {
         //     code: 'CEBIEK3N',
